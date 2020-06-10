@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Enter point
  * print firtst string standard output
  * Return: Always 0
