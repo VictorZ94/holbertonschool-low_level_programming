@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit - print last digit of a number
- * @n: argument positive or negative number
+ * @r: argument positive or negative number
  *
  * Return: On success 0 otherwise 1
  */
