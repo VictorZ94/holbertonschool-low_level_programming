@@ -6,17 +6,24 @@
  *
  * Return: On success 0 otherwise 1
  */
-int print_last_digit(int n)
+int print_last_digit(int r)
 {
-	int m;
+	int v = (r % 10);
+	int n = (v * -1);
 
-	if (n < 0)
+	if (r > 0)
 	{
-		m = n * -1;
-		_putchar((m % 10) + '0');
-		return (m % 10);
+		_putchar (v + '0');
+		return (v);
 	}
-
-	_putchar((n % 10) + '0');
-	return (n % 10);
+	else if (r == 0)
+	{
+		_putchar (r + '0');
+		return (r);
+	}
+	else
+	{
+		_putchar (n + '0');
+		return (n);
+	}
 }
