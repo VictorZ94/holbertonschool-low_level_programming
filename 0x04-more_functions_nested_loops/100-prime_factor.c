@@ -16,7 +16,7 @@ int main(void)
 			n = n / f;
 			if (n == 1)
 			{
-			printf("%ld \n", f);
+			printf("%ld\n", f);
 			}
 			f = 1;
 		}
