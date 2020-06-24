@@ -122,7 +122,7 @@ int main(void)
 
 Your output should be.
 
-```bash
+```C
 [victorz@ManjaroKDE 0x01-variables_if_else_while]$ gcc -Wall -pedantic -Werror -Wextra 0-positive_or_negative.c -o 0-positive_or_negative
 [victorz@ManjaroKDE 0x01-variables_if_else_while]$ ./0-positive_or_negative 
 -35884268 is negative
