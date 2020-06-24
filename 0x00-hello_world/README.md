@@ -1,6 +1,6 @@
 # To know the steps of compiler 
 
-![]https://img.shields.io/badge/Victor%20Zuluaga-Holberton__School-red
+![] https://img.shields.io/badge/Victor%20Zuluaga-Holberton__School-red
 
 
 ## Preprocessor, Compiler, Assabler and Linkig 
@@ -40,6 +40,8 @@ Which of the following are both valid comment syntaxes in ANSI C, and Betty-comp
 ```
 /* Comment */ for one line
 
+ ================================================0
+
 /*
  * Comment   for one blocks of comment
  */
@@ -54,4 +56,4 @@ What are the different steps to form an executable file from C source code
 
 
 
-> Victor Zuluaga. Student at Holberton School
+> Victor Zuluaga. Student Software's Development at Holberton School
