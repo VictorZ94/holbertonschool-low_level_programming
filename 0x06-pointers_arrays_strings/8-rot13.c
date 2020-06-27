@@ -19,7 +19,10 @@ char *rot13(char *s)
 		while (str[j])
 		{
 			if (s[i] == str[j])
+			{
 				s[i] = root13[j];
+				break;
+			}
 
 		j++;
 		}
