@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strchr - Replace character dest by src, n bytes specified.
+ * _strchr - function returns a pointer to the first occurrence of the string
  * @s: pointer to char
  * @c: Occurence to seach
  *
