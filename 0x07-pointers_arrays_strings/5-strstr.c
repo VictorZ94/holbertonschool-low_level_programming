@@ -11,8 +11,13 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
+	char *temp = haystack; /* temp - to go back the pointer
+					* to the beginning initial position
+					**/
+
 	while (*needle)
 	{
+		haystack = temp;
 		while (*haystack)
 		{
 			if (*needle == *haystack)
