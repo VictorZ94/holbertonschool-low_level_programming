@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _putchar_recursion - to print only strings
+ * _puts_recursion - to print only strings
  * @s: String full
  * Return: Nothing
  */
