@@ -11,31 +11,32 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j; 
-      int add = 0;
+	int i, j;
+	int add = 0;
 
-      i = 0;
-      while(argv[i])
-      {
-            j = 0;
-            while(argv[i][j])
-            {
-                  if ((isdigit(argv[i][j]) == 1))
-                  {
-                        printf("error\n");
-                        return (1);
-                  }
-            j++;
-            }
-      i++;
-      }
-      i = 1;
-      while (argv[i] != argv[argc])
-      {
-           add += atoi(argv[i]);
-      i++;
-      }
+	i = 0;
+	while (argv[i])
+	{
+		j = 0;
+		while (argv[i][j])
+		{
+			if ((isdigit(argv[i][j]) == 1))
+			{
+				printf("error\n");
+				return (1);
+			}
+		j++;
+		}
+	i++;
+	}
+	i = 1;
 
-      printf("%d\n", add);
+	while (argv[i] != argv[argc])
+	{
+		add += atoi(argv[i]);
+		i++;
+	}
+
+	printf("%d\n", add);
 return (0);
 }
