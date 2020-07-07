@@ -17,9 +17,8 @@ char *_strdup(char *str)
 
 	i = 0;
 	while (str[i])
-	{
 		i++;
-	}
+		
 	p = malloc(sizeof(char) * i); /* is not necesary to put space to NULL */
 	if (!p)
 		return ('\0');
@@ -30,6 +29,5 @@ char *_strdup(char *str)
 		p[j] = str[j];
 		j++;
 	}
-p[i] = '\0'
 return (p);
 }
