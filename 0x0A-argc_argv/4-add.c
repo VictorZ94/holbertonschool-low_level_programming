@@ -14,13 +14,13 @@ int main(int argc, char *argv[])
 	int i, j;
 	int add = 0;
 
-	i = 0;
+	i = 1;
 	while (argv[i])
 	{
-		j = 0;
+		j = 1;
 		while (argv[i][j])
 		{
-			if ((isdigit(argv[i][j]) == 1))
+			if ((isdigit(argv[i][j]) == 0))
 			{
 				printf("error\n");
 				return (1);
