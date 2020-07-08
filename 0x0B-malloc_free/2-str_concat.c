@@ -14,7 +14,7 @@ char *str_concat(char *s1, char *s2)
 	int i, j, z, w;
 
 	if (!s1 || !s2) /* if NO son NULL */
-		return ('\0');
+		return ("");
 
 	i = 0;
 	while (s1[i])
