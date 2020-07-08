@@ -13,8 +13,10 @@ char *str_concat(char *s1, char *s2)
 	char *p;
 	int i, j, z, w;
 
-	if (!s1 || !s2) /* if NO son NULL */
-		return ("");
+	if (!s1) /* if is NOT NULL */
+		s1 = "";
+	if (!s2) /* if is NOT NULL */
+		s2 = "";
 
 	i = 0;
 	while (s1[i])
