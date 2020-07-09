@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		i++;
 	}
-	p = malloc(sizeof(char) * (size + i));
+	p = malloc(sizeof(char) * (size + i) + 1);
 	if (!p)
 		return (NULL);
 
