@@ -16,7 +16,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int size;
 	size_t i, j;
 
-	size = _strlen(s1);
+	size = 0;
+	while (s1[size])
+	{
+		size++;
+	}
 	i = 0;
 	while (s2[i] && i <= n)
 	{
@@ -41,5 +45,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 		j++;
 	}
+p[i] = '\0';
 return (p);
 }
