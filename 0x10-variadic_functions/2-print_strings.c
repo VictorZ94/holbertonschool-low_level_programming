@@ -23,8 +23,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		str = va_arg(args, char *);
 		printf("%s", str);
+
 		if (i != (n - 1))
 			printf("%s", separator);
+
+		else
+			printf("(nil)");
 	}
 va_end(args);
 printf("\n");
