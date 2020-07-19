@@ -15,8 +15,6 @@ void print_all(const char * const format, ...)
 	float d;
 	char *str, *separador = "";
 
-	if (!format)
-		return;
 	va_start(args, format);
 	count = 0;
 	while (format[count] != '\0')
