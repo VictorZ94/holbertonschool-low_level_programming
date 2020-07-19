@@ -47,6 +47,6 @@ void print_all(const char * const format, ...)
 		}
 	count++;
 	}
-printf("\n");
 va_end(args);
+printf("\n");
 }
