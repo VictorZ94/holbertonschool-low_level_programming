@@ -1,23 +1,20 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
+ * print_list - print list of singly linked
+ * @h: points struct of nodes
  *
- * Description: singly linked list node structure
- * for Holberton project
+ * Return: counter Holberton project
  */
 size_t print_list(const list_t *h)
 {
-      if (h == NULL)
-            return (0);
+	if (h == NULL)
+		return (0);
 
-      if (h->str == NULL)
-            printf("[0] (nil)\n");
-      else
-            printf("[%d] %s\n", h->len, h->str);
+	if (h->str == NULL)
+		printf("[0] (nil)\n");
+	else
+		printf("[%d] %s\n", h->len, h->str);
 
-      return(1 + (print_list(h->next)));
+	return (1 + (print_list(h->next)));
 }
