@@ -8,7 +8,7 @@ Perhaps you would like to have a function that will accept any number of values 
 
 ## Section task
 
-0. Beauty is variable, ugliness is constant
+### 0. Beauty is variable, ugliness is constant
 
 Write a function that returns the sum of all its parameters.
 
@@ -42,7 +42,7 @@ int main(void)
 [victorz@ManjaroKDE 0x10-variadic_functions]$ 
 ```
 
-1. To be is to be the value of a variable 
+### 1. To be is to be the value of a variable 
 
 Write a function that prints numbers, followed by a new line.
 
@@ -73,7 +73,7 @@ int main(void)
 [victorz@ManjaroKDE 0x10-variadic_functions]$ 
 ```
 
-2. One woman's constant is another woman's variable
+### 2. One woman's constant is another woman's variable
 
 Write a function that prints strings, followed by a new line.
 
@@ -105,7 +105,7 @@ Jay, Django
 [victorz@ManjaroKDE 0x10-variadic_functions]$ 
 ```
 
-3. To be is a to be the value of a variable
+### 3. To be is a to be the value of a variable
 
 Write a function that prints anything.
 
