@@ -7,7 +7,7 @@
  * @filename: pathname
  * @letters: numbers of a character to save
  *
- * Return: what it read
+ * Return: what it read.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -25,6 +25,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fdw = write(STDOUT_FILENO, buf, fdr);
 	if (fdw == -1)
 		return (0);
+
 	close(fd);
 
 free(buf);
