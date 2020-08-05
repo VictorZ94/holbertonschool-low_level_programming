@@ -25,14 +25,19 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	fdr = read(fd, buf, letters);
 	if (fdr == -1)
+	{
+		free(buf)
 		return (0);
+	}
 
 	fdw = write(STDOUT_FILENO, buf, fdr);
 	if (fdw == -1)
+	{
+		free(buf)
 		return (0);
+	}
 
-	close(fd);
-
+close(fd);
 free(buf);
 return (fdr);
 }
