@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
 	if (argc != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	copy_content(argv[1], argv[2], argv);
@@ -47,6 +47,7 @@ ssize_t copy_content(const char *file_from, const char *file_to, char **argv)
 	{
 		if (fdr == -1)
 			dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]), exit(98);
+
 		fdw = write(fd2, BUF, fdr);
 		if (fdw == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
