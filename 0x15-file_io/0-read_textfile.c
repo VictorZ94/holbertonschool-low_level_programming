@@ -1,43 +1,37 @@
 #include "holberton.h"
-
 /**
- * read_textfile - read and print it filename
- * @filename: pathname
- * @letters: numbers of a character to save
- *
- * Return: what it read.
+ * read_textfile - function to read  and print a file
+ * @filename: file
+ * @letters: number of letters of the file
+ * Return: numbers of letters or zero it fails
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, fdr, fdw;
-	char *buf;
+	int fd = 0;
+	char *buffer;
+	int  byt_read;
+	int byt_writ;
 
-	if (!filename)
+	if (filename == NULL)
 		return (0);
-
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-
-	buf = malloc(sizeof(char) * letters);
-	if (!buf)
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
 		return (0);
-
-	fdr = read(fd, buf, letters);
-	if (fdr == -1)
+	byt_read = read(fd, buffer, letters);
+	if (byt_read == -1)
 	{
-		free(buf);
+		free(buffer);
 		return (0);
 	}
-
-	fdw = write(STDOUT_FILENO, buf, fdr);
-	if (fdw == -1)
+	byt_writ = write(STDOUT_FILENO, buffer, (ssize_t)byt_read);
+	if (byt_writ == -1)
 	{
-		free(buf);
+		free(buffer);
 		return (0);
 	}
-
-close(fd);
-free(buf);
-return (fdw);
+	close(fd);
+	return (byt_read);
 }
