@@ -1,7 +1,9 @@
-#ifndef FILE_DESCRIPTOR_H
-#define FILE_DESCRIPTOR_H
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
+
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
