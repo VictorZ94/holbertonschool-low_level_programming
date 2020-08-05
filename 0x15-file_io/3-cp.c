@@ -43,7 +43,7 @@ ssize_t copy_content(const char *file_from, const char *file_to, char **argv)
 	if (fd2 == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 
-	while ((fdr = read(fd1, BUF, 1024)) != NULL)
+	while ((fdr = read(fd1, BUF, 1024)) != '\0')
 	{
 		fdw = write(fd2, BUF, fdr);
 		if (fdw == -1)
