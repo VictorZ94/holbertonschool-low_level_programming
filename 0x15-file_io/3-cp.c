@@ -30,9 +30,6 @@ ssize_t copy_content(const char *file_from, const char *file_to, char **argv)
 	int fd1, fd2, fdr, fdw;
 	char BUF[1024];
 
-	if (!file_from)
-		return (-1);
-
 	fd1 = open(file_from, O_RDONLY);
 	if (fd1 == -1)
 	{
@@ -45,13 +42,14 @@ ssize_t copy_content(const char *file_from, const char *file_to, char **argv)
 
 	while ((fdr = read(fd1, BUF, 1024)) > 0)
 	{
-		if (fdr == -1)
-			dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]), exit(98);
 
 		fdw = write(fd2, BUF, fdr);
 		if (fdw == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
+	if (fdr == -1)
+		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]), exit(98);
+
 	if (close(fd1) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd1), exit(100);
 
