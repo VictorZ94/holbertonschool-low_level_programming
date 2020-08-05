@@ -58,5 +58,5 @@ ssize_t copy_content(const char *file_from, const char *file_to, char **argv)
 	if (close(fd2) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2), exit(100);
 
-	return (1);
+	return (0);
 }
