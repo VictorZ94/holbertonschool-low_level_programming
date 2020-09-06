@@ -35,11 +35,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		if (!current)
 			return (NULL);
 	}
-	temp = current;
+	temp = current->next;
 	(*NewNode).next = (*current).next;
 	(*NewNode).prev = current;
 	(*current).next = NewNode;
-	temp = temp->next;
 	temp->prev = NewNode;
 	return (NewNode);
 }
