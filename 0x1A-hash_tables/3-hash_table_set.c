@@ -1,33 +1,4 @@
 #include "hash_tables.h"
-
-/**
- * hash_table_set - add key and value to an index.
- * @ht: pointer's array to save linked list
- * @key: key to look up index
- * @value: value's key
- *
- * Return: On success 1 on error 0.
- */
-int hash_table_set(hash_table_t *ht, const char *key, const char *value)
-{
-	hash_node_t *head;
-	unsigned long int index = 0;
-
-	if (!ht)
-		return (0);
-
-	if (!key)
-		return (0);
-
-	head = NULL;
-	index = key_index((const unsigned char *)key, ht->size);
-	ht->array[index] = add_node(&head, key, value);
-	if (!ht->array[index])
-		return (0);
-
-	return (1);
-}
-
 /**
  * add_node - add node at beginning of the node
  * @head: head of nodes with reference to the previous node
@@ -44,10 +15,51 @@ hash_node_t *add_node(hash_node_t **head, const char *key, const char *value)
 	if (!newnode)
 		return (NULL);
 
-	newnode->key = (char *)key;
-	newnode->value = (char *)value;
+	newnode->key = strdup(key);
+	if (newnode->key == NULL)
+		free(newnode->key);
+	newnode->value = strdup(value);
+	if (newnode->value == NULL)
+		free(newnode->value);
 	newnode->next = *head;
 	*head = newnode;
 
-	return (newnode);
+	return (*head);
 }
+
+/**
+ * hash_table_set - add key and value to an index.
+ * @ht: pointer's array to save linked list
+ * @key: key to look up index
+ * @value: value's key
+ *
+ * Return: On success 1 on error 0.
+ */
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
+{
+	unsigned long int index = 0;
+
+	if (!ht || !key || !value || strlen(key) == 0 || strlen(value) == 0)
+		return (0);
+
+	if (!(ht->array) || !(ht->size) == 0)
+		return (0);
+
+	index = key_index((const unsigned char *)key, ht->size);
+	if (ht->array[index] != 0)
+	{
+		if ((strcmp(ht->array[index]->key, key)) == 0)
+		{
+			free((ht->array[index])->value);
+			(ht->array[index])->value = strdup(value);
+			return (1);
+		}
+		else
+			add_node(&(ht->array[index]), key, value);
+	}
+	else
+		add_node(&(ht->array[index]), key, value);
+
+	return (1);
+}
+
