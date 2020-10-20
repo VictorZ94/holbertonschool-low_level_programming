@@ -47,7 +47,7 @@ This section we initialize to see low level programming some text editor since t
 20. [0x18-dynamic_libraries](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries)
 ### printf project
 
-###### [_printf](https://github.com/VictorZ94/printf)
+[_printf](https://github.com/VictorZ94/printf)
 
 ### Data structure
 
@@ -58,7 +58,7 @@ This section we initialize to see low level programming some text editor since t
 
 ### Simple Shell
 
-###### [Shell](https://github.com/VictorZ94/simple_shell)
+[Shell](https://github.com/VictorZ94/simple_shell)
 
 ### COPYRIGHT
 Holberton school - students
