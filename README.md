@@ -23,7 +23,7 @@ This section we initialize to see low level programming some text editor since t
 - Heap/Stack
 - Static Libraries
 
-Navegation through all projects
+### Navegation through all projects
 
 1. [0x00-hello_world](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x00-hello_world)
 2. [0x01-variables_if_else_while](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x01-variables_if_else_while)
@@ -42,8 +42,23 @@ Navegation through all projects
 15. [0x0E-structures_typedef](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x0E-structures_typedef)
 16. [0x0F-function_pointers](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x0F-function_pointers)
 17. [0x10-variadic_functions](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x10-variadic_functions)
-18. []()
+18. [0x14-bit_manipulation](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x14-bit_manipulation)
+19. [0x15-file_io](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x15-file_io)
+20. [0x18-dynamic_libraries](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries)
+### printf project
 
+###### [_printf](https://github.com/VictorZ94/printf)
+
+### Data structure
+
+21. [0x12-singly_linked_lists](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x12-singly_linked_lists)
+22. [0x13-more_singly_linked_lists](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x13-more_singly_linked_lists)
+23. [0x17-doubly_linked_lists](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x17-doubly_linked_lists)
+24. [0x1A-hash_tables](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x1A-hash_tables)
+
+### Simple Shell
+
+###### [Shell](https://github.com/VictorZ94/simple_shell)
 
 ### COPYRIGHT
 Holberton school - students
