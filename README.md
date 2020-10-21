@@ -56,6 +56,10 @@ This section we initialize to see low level programming some text editor since t
 23. [0x17-doubly_linked_lists](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x17-doubly_linked_lists)
 24. [0x1A-hash_tables](https://github.com/VictorZ94/holbertonschool-low_level_programming/tree/master/0x1A-hash_tables)
 
+#### Monty
+
+25. [0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/VictorZ94/monty)
+
 ### Simple Shell
 
 [Shell](https://github.com/VictorZ94/simple_shell)
