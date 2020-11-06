@@ -1,0 +1,6 @@
+#
+# Make file the first task
+#
+
+output: holberton.c main.c m.h
+	gcc main.c holberton.c -o holberton
