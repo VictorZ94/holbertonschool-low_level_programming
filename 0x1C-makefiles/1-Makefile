@@ -1,0 +1,9 @@
+#
+# Make file the first task
+#
+
+CC	:= gcc
+SRC	:= holberton.c main.c
+
+all: $(SRC) m.h
+	$(CC) $(SRC) -o holberton
