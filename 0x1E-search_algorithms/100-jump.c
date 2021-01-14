@@ -28,8 +28,6 @@ int jump_search(int *array, size_t size, int value)
 					return (x);
 				else if (x == i || array[x] > value)
 					return (-1);
-				if (value > (int)i)
-					return (-1);
 				x++;
 			}
 		}
