@@ -7,3 +7,6 @@
 [submodule "0x16-simple_shell"]
 	path = 0x16-simple_shell
 	url = https://github.com/VictorZ94/simple_shell.git
+[submodule "https:/github.com/VictorZ94/holbertonschool-low_level_programming.git"]
+	path = https:/github.com/VictorZ94/holbertonschool-low_level_programming.git
+	url = https://github.com/VictorZ94/sorting_algorithms.git
