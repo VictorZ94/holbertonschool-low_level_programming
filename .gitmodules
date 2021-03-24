@@ -10,3 +10,6 @@
 [submodule "0x1B-Sorting_algorithms"]
 	path = 0x1B-Sorting_algorithms
 	url = https://github.com/VictorZ94/sorting_algorithms.git
+[submodule "0x1D-Binary_trees"]
+	path = 0x1D-Binary_trees
+	url = https://github.com/VictorZ94/binary_trees.git
