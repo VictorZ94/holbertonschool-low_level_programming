@@ -7,3 +7,6 @@
 [submodule "0x16-simple_shell"]
 	path = 0x16-simple_shell
 	url = https://github.com/VictorZ94/simple_shell.git
+[submodule "0x1B-Sorting_algorithms"]
+	path = 0x1B-Sorting_algorithms
+	url = https://github.com/VictorZ94/sorting_algorithms.git
